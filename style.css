@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgb(184, 217, 233), rgb(144, 144, 235));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  background: rgb(2, 2, 2);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.display-container {
+  width: 100%;
+  height: 40px;
+}
+
+#display {
+  width: 100%;
+  height: 100%;
+  font-size: 28px;
+  text-align: right;
+  padding: 0 10px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+#display:focus {
+  border: 1px solid white;
+  outline: none;
+}
+
+.clear-delete-container {  
+  width: 100%;  
+  display: flex;  
+  justify-content: center;
+  margin: 15px 0;
+}
+
+button {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.cd-btn {
+  width: 20%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 28px;
+  background-color: orange;
+  color: white;
+}
+
+button:active {
+  color: greenyellow;
+  border: 1px solid greenyellow;
+}
+
+.buttons-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.digits-container {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.digit,
+.zero {
+  width: 60px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+}
+
+.zero {
+  width: 120px;
+}
+
+.operators-container {
+  width: 140px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 200px;
+}
+
+.operator-btn,
+.eq {  
+  width: 66px;
+  height: 56px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(25, 224, 35);
+  color: rgb(8, 8, 8);
+  font-size: 24px;
+}
+
+.eq {
+  width: 140px;
+}
+
+.operator-btn:active,
+.eq:active {
+  color: white;
+  border: none;
+}
